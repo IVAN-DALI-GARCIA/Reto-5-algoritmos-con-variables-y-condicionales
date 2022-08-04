@@ -1,0 +1,504 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+.main {
+    background: rgb(255, 255, 255);
+    max-width: 1300px;
+    margin: 20px auto;
+    width: 95%;
+}
+
+header {
+    max-width: 1300px;
+    margin: 20px auto;
+    width: 95%;
+    background: url(IMAGENES/recetas-para-cuaresma.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left;
+    box-sizing: border-box;
+    padding-top: 5px;
+}
+
+.logo {
+    width: 150px;
+    margin-left: 4%;
+}
+
+.caja_logo {
+    background: rgb(255, 253, 253, .8);
+    width: 150px;
+    margin-left: 20px;
+    margin-top: 20px;
+    border-radius: 10%;
+}
+
+header h1 {
+    padding-left: 25px;
+    padding-top: 5px;
+    background: rgb(255, 253, 253, .5);
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-radius: 10px;
+    font-size: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+header p {
+    padding-left: 25px;
+    padding-top: 5px;
+    margin-bottom: 5px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
+}
+
+ul,
+ul {
+    list-style: none;
+}
+
+nav {
+    width: 98%;
+    margin: 10px auto;
+    max-width: 1300px;
+    overflow: hidden;
+    border-radius: 4px;
+    border-bottom: 1px solid #555;
+    margin-bottom: 2px;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#f9bdf1+0,f4cbed+50,f4d0ee+51,fcb5f3+100 */
+    background: #f9bdf1;
+    /* Old browsers */
+    background: -moz-linear-gradient(top, #f9bdf1 0%, #f4cbed 50%, #f4d0ee 51%, #fcb5f3 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #f9bdf1 0%, #f4cbed 50%, #f4d0ee 51%, #fcb5f3 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #f9bdf1 0%, #f4cbed 50%, #f4d0ee 51%, #fcb5f3 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#f9bdf1', endColorstr='#fcb5f3', GradientType=0);
+    /* IE6-9 */
+}
+
+.menu {
+    width: 88%;
+    display: table;
+    table-layout: fixed;
+    float: left;
+}
+
+.menu li {
+    display: table-cell;
+    overflow: hidden;
+    width: 100%;
+    border-radius: 1px solid #5c5c5c;
+    border-left: 1px solid rgba(255, 255, 255, .2);
+}
+
+.menu li:first-child {
+    border-left: none;
+}
+
+.menu li:first-child:hover {
+    border-left: none;
+}
+
+.menu li a {
+    color: black;
+    display: block;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 17px;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, .3);
+}
+
+.menu li:hover {
+    background: rgba(255, 255, 255, .3);
+    border-right: 1px solid transparent;
+    border-left: 1px solid transparent;
+    border-bottom: none;
+}
+
+.menu li:active {
+    background: rgba(0, 0, 0, .3);
+    box-shadow: 0px 3px 2px rgba(0, 0, 0, .1);
+}
+
+.search_bar {
+    width: 12%;
+    float: left;
+    padding: 10px 10px;
+    box-sizing: border-box;
+    position: relative;
+    outline: none;
+}
+
+.search_bar input {
+    width: 100%;
+    height: auto;
+    border-radius: 50px;
+    border-bottom: 1px solid #858585;
+    padding: 0px 10px 0px 25px;
+    box-sizing: border-box;
+    height: 25px;
+    border: none;
+    outline: none;
+    box-shadow: inser 0px 1px 3px rgba(0, 0, 0, .7);
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#f7b2ec+0,f2d0ec+47,f2d2ec+54,fcb5f3+100 */
+    background: #f7b2ec;
+    /* Old browsers */
+    background: -moz-linear-gradient(top, #f7b2ec 0%, #f2d0ec 47%, #f2d2ec 54%, #fcb5f3 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #f7b2ec 0%, #f2d0ec 47%, #f2d2ec 54%, #fcb5f3 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #f7b2ec 0%, #f2d0ec 47%, #f2d2ec 54%, #fcb5f3 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#f7b2ec', endColorstr='#fcb5f3', GradientType=0);
+    /* IE6-9 */
+}
+
+.search_bar input:focus {
+    background: #fff;
+    box-shadow: none;
+}
+
+.icon-home,
+.icon-spoon-knife,
+.icon-mug,
+.icon-envelop,
+.icon-user-tie,
+.icon-cogs {
+    display: inline-block;
+    position: relative;
+    top: 2px;
+    padding-right: 5px;
+}
+
+.icon-search {
+    position: absolute;
+    bottom: 10px;
+    left: 15px;
+    color: black;
+    margin-bottom: 5px;
+}
+
+.main article {
+    border-radius: 15px;
+    background: #f7b2ec;
+    /* Old browsers */
+    background: -moz-linear-gradient(top, #f7b2ec 0%, #f2d0ec 47%, #f2d2ec 54%, #fcb5f3 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #f7b2ec 0%, #f2d0ec 47%, #f2d2ec 54%, #fcb5f3 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #f7b2ec 0%, #f2d0ec 47%, #f2d2ec 54%, #fcb5f3 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#f7b2ec', endColorstr='#fcb5f3', GradientType=0);
+    /* IE6-9 */
+}
+
+.main p {
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+.main p a {
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: black;
+    padding-left: 20px;
+}
+
+.registro {
+    background-image: url(imagenes/saludable.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    font-family: sans-serif;
+    margin-top: 10px;
+    border-radius: 15px;
+}
+
+.regform {
+    max-width: 70%;
+    background: rgba(0, 0, 0, .7);
+    margin: auto;
+    color: #ffffff;
+    padding: 10px 0px 10px 0px;
+    text-align: center;
+    border-radius: 15px 15px 0px 0px;    
+}
+
+.main2 {
+    background-color: rgba(0, 0, 0, .5);
+    max-width: 70%;
+    margin: auto;    
+}
+
+/* ---- En esta parte empezamos a darle estilos al formulario ---- */
+form {
+    padding: 10px;
+}
+.formulario{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;    
+    
+}
+.formulario__label{
+    display: block;
+    color: white;
+    font-weight:900;
+    font-size: 1.1rem;
+    padding: 10px;
+    cursor: pointer;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+/* ---- accedemos a la caja de los input de cada uno de ellos ---- */
+.formulario__grupo{
+    position: relative;    
+}
+.formulario__input{
+    width: 80%;
+    background: white;
+    border: 3px solid transparent;
+    border-radius: 5px;
+    height: 45px;
+    line-height: 45px;
+    padding: 0 40px 0px 10px;
+    transition: .3s ease all;
+    font-size: 1.1rem;
+}
+.formulario__input:focus{
+    border: 3px solid rgb(0, 0, 0);
+    outline: none;
+    box-shadow: 3px 6px 30px rgba(163, 163, 163, .4);
+}
+.formulario__input:hover{
+    border: 3px solid blue;
+    outline: none;
+    box-shadow: 3px 6px 30px rgba(163, 163, 163, .4);
+}
+.formulario__input2{
+    width: 86%;
+    background: white;
+    border: 3px solid transparent;
+    border-radius: 5px;
+    height: 45px;
+    line-height: 45px;
+    padding: 0 40px 0px 10px;
+    transition: .3s ease all;
+    font-size: 1.1rem;
+}
+.formulario__input2:focus{
+    border: 3px solid black;
+    outline: none;
+    box-shadow: 3px 6px 30px rgba(163, 163, 163, .4);
+}
+.formulario__input2:hover{
+    border: 3px solid blue;
+    outline: none;
+    box-shadow: 3px 6px 30px rgba(163, 163, 163, .4);
+}
+.formulario__input3{
+    width: 86%;
+    background: white;
+    border: 3px solid transparent;
+    border-radius: 5px;
+    height: 100px;
+    line-height: 45px;
+    padding: 0 40px 0px 10px;
+    transition: .3s ease all;
+    font-size: 1.1rem;
+}
+.formulario__input3:focus{
+    border: 3px solid black;
+    outline: none;
+    box-shadow: 3px 6px 30px rgba(163, 163, 163, .4);
+}
+.formulario__input3:hover{
+    border: 3px solid blue;
+    outline: none;
+    box-shadow: 3px 6px 30px rgba(163, 163, 163, .4);
+}
+/* ---- En esta parte modificamos el mensajhe de error en cada inpout  ---- */
+.formulario__error{
+    font-size: .5rem;
+    color:rgb(253, 253, 253);
+    margin-bottom: 0;    
+    display: none;
+    margin-top: 3px; 
+}
+.formulario__error-activo{
+    display: block;
+}
+/* ----Acomodo el icono de cada iput ---- */
+.formulario__validacion{
+    position: absolute;
+    right: 8rem;
+    bottom: 15px;
+    z-index: 100;
+    font-size: 1.5rem;
+    opacity: 0; 
+}
+/* ---- En esta parte doy estilos a los checbox ---- */
+.formulario_checkbox{
+    margin-left: 25px;
+    width: 25px;    
+    border: 3px solid transparent;
+    margin-right: 15px;
+}
+
+
+.formulario__1{
+    color: rgb(255, 255, 255);
+}
+
+/* ---- estilos el mensaje de error ---- */
+.formulario__mesaje{
+    height: 45px;
+    line-height: 45px;
+    background: #f66868;
+    padding: 0 15px;
+    border-radius: 5px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    display: none;
+}
+.formulario__mesaje-activo{
+    display: block;
+}
+.formulario__mesaje p{
+    margin: 0;
+}
+/* ---- Estilos al mensaje de envio correcto ---- */
+.formulario__mensaje_exito{
+    height: 45px;
+    line-height: 45px;
+    background: #85ff13;
+    padding: 0 15px;
+    border-radius: 5px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    margin-top: 15px;
+    display: none;
+}
+.formulario__mensaje_exito-activo{
+    display: block;
+}
+.formulario__mensaje_exito p{
+    margin: 0;
+}
+/* ---- validacion de formularios  ---- */
+.formulario__1__correcto .formulario__validacion{
+    color: #1ed11e;
+    opacity: 1;
+
+}
+.formulario__1__incorrecto .formulario__validacion{
+    color: #fa2929;
+    opacity: 1;
+}
+.formulario__1__incorrecto .formulario__label{
+    width: 80%;
+    background: #fa2929;
+    border: 3px solid transparent;
+    border-radius: 5px;
+    padding: 0 40px 0px 10px;
+    transition: .3s ease all;
+    font-size: 1.1rem;
+}
+.formulario__1__incorrecto .formulario__input{
+    border: 3px solid #fa2929;
+    outline: none;
+    box-shadow: 3px 6px 30px rgba(163, 163, 163, .4);
+}
+
+/* ---- -------------------------------------------------------------------------------------- ---- */
+
+
+.areaTexto {
+    position: relative;
+    left: 200px;
+    top: -37px;    
+    width: 70%;
+    border-radius: 6px;
+    padding: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight:800;
+    font-size: 20px;
+    color: #555;
+    resize: none; 
+    outline: none;
+    
+}
+
+
+button {
+    background-color: #000000;
+    display: block;
+    margin: auto;
+    margin-top: 40px;
+    text-align: center;
+    border-radius: 12px;
+    border: 4px solid #366473;
+    padding: 14px 110px;
+    outline: none;
+    color: rgb(250, 250, 250);
+    cursor: pointer;
+    transition: .025px;
+    font-size: 20px;
+}
+
+button:hover {
+    background-color: #5390f5;
+    color: black;
+    transition: .3s none all;
+    border: 4px solid #000000;
+    box-shadow: 3px 0px 30px rgba(163, 163, 163, 1);
+}
+
+
+
+/* ---- en esta parte de aca se da estilos al footer  ---- */
+footer {
+    background: rgb(216, 215, 215);
+    height: 250px;
+    margin-bottom: 25px;
+    max-width: 1300px;
+    margin: auto;
+    padding-top: 10px;
+}
+
+footer .piePagina {
+    width: 30%;
+    margin-left: 18px;
+    margin-top: 15px;
+}
+
+footer .piePagina p {
+    font-size: 10px;
+    color: rgb(85, 85, 85);
+    padding-top: 8px;
+}
+
+h3 {
+    font-size: 15px;
+}
+
+.flecha {
+    width: 200px;
+    margin: auto;
+    margin-left: 270px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.respuesta {
+    width: 500px;
+}

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COCINA FÁCIL</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="shortcut icon" href="IMAGENES/logo_favicon_cocina_facil.png" type="image/x-icon">
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <link rel="stylesheet" href="https://i.icomoon.io/public/temp/86e94563f9/UntitledProject/style.css">
+    <script src="https://kit.fontawesome.com/99a0281992.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <div>
+            <div class="caja_logo">
+                <img class="logo" src="IMAGENES/logo_favicon_cocina_facil.png" alt="Logo de cocina facil">
+            </div>
+            <h1> COCINA FACIL</h1>
+            <P>Escuela GASTRONIMICA.</P>
+        </div>
+        <nav>
+            <ul class="menu">
+                <li>
+                    <a href="#"><span class="icon-home"></span> </a>
+                </li>
+                <li>
+                    <a href="#"><span class="icon-spoon-knife"></span> INICIO</a>
+                </li>
+                <li>
+                    <a href="#"><span class="icon-mug"></span> ESPECIAL</a>
+                </li>
+                <li>
+                    <a href="#"><span class="icon-cogs"></span> TALLERES</a>
+                </li>
+                <li>
+                    <a href="#"><span class="icon-user-tie"></span> VISITANTES</a>
+                </li>
+                <li>
+                    <a href="#"><span class="icon-envelop"></span> CONTACTO</a>
+                </li>
+            </ul>
+            <div class="search_bar">
+                <a href="#" class="icon-search"></a>
+                <input type="text" id="bar">
+            </div>
+        </nav>
+    </header>
+    <Section class="main">
+        <section>
+            <article>
+                <p>
+                    <a href="" class="icon-envelop"></a> CONTACTO
+                </p>
+            </article>
+
+            <div class="registro">
+                <div class="regform">
+                    <h1>FORMA PARA REGISTRO.</h1>
+                </div>
+                <div class="main2">  
+                    <form class="formulario" id="formulario" action="#" method="POST" >
+                        <!-- Este es un bloque para un form para el "usuario" -->
+                        <div class="formulario__1" id="grupo__usuario">
+                            <label for="usuario" class="formulario__label">USUARIO</label>
+                            <div class="formulario__grupo">
+                                <input type="text" class="formulario__input" name="usuario" id="usuario" placeholder="Coloca tu USUARIO ">
+                                <i class="formulario__validacion fas fa-times-circle"></i>
+                            </div>                            
+                            <p class="formulario__error">
+                                El Usuario debera contener de 4 a 16 digitos y solo puede conter número, letras y/o guion bajo.
+                            </p>                                                           
+                        </div>
+                        <!-- Este es un bloque para un form para el "Telefono"-->
+                        <div class="formulario__1" id="grupo__edad">
+                            <label for="edad" class="formulario__label">Edad</label>
+                            <div class="formulario__grupo">
+                                <input type="text" class="formulario__input" name="edad" id="edad" placeholder="coloca tu EDAD">
+                                <i class=" formulario__validacion fas fa-times-circle">
+                                </i>
+                            </div>
+                            <p class="formulario__error">
+                                La Edad debera de ser de ser mayor de 18.
+                            </p>
+                        </div>                        
+                        
+                        <div class="formulario__mesaje" id="formulario__mesaje">
+                            <p><i class="fa-solid fa-circle-exclamation"></i><b>Error: por favor rellenar el formulario de forma correcta!!!! </b>
+                            </p>
+                        </div>
+                        <div class="formulario__grupo formulario__grupo-btn-enviar">
+                            <button type="submit">ENVIAR DATOS</button>
+                            <p class="formulario__mensaje_exito" id="formulario__mensaje_exito"> Formulario se ha enviado con ¡EXTITO!</p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </section>
+    </Section>
+    <footer>
+        <div class="piePagina">
+            <h3>
+                SISTEMA DE UNIVERSIDAD VIRTUAL
+            </h3>
+            <p>
+                Av. La Paz No. 2453, Col. Arcos Sur, C.P. 44130 Tel: +52 33 3268 8888‏ ext. 18801
+            </p>
+            <p>
+                IVAN DALI GARCIA TORRES IVANDALIGARCIA@GMAIL.COM LICENCIATURA EN DESARROLLO DE SISTEMAS WEB
+
+            </p>
+            <p>
+                Av. Enrique Díaz de León No. 782, Col. Moderna, C.P. 44190 Tel: +52 33 3268 8888‏ ext. 18802.
+
+            </p>
+            <h3>
+                Guadalajara, Jalisco, México.
+            </h3>
+            <p>
+                Centro de Atención Personalizada Tel: ‎+52 33 3268‎ 8888, opción 1 Llamadas sin costo nacional Tel: 800 5819111 Llamadas sin costo desde Estados Unidos Tel: +1877 4490230 WhatsApp: +52-33-32688880
+
+            </p>
+
+        </div>
+    </footer>
+
+    <script src="formulario.js"></script>
+</body>
+
+</html>
